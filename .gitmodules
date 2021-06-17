@@ -1,0 +1,3 @@
+[submodule "Osiris/third-party/spdlog"]
+	path = Osiris/third-party/spdlog
+	url = https://github.com/gabime/spdlog.git
