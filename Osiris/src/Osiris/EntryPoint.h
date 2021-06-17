@@ -1,9 +1,8 @@
 #pragma once
 
-#include <memory>
-
 #ifdef OSIRIS_PLATFORM_WINDOWS
 
+#include <memory>
 extern std::unique_ptr<Osiris::Application> Osiris::CreateApplication();
 
 int main(int argc, char** argv)
