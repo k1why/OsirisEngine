@@ -1,3 +1,7 @@
+#build dirs
+bin/
+bin-int/
+
 # Prerequisites
 *.d
 
