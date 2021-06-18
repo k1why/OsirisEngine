@@ -1,7 +1,7 @@
 workspace "Osiris"
 	architecture "x64"
 
-	configureations
+	configurations
 	{
 		"Debug",
 		"Release",
@@ -40,7 +40,7 @@ project "Osiris"
 			"OSIRIS_BUILD_DLL"
 		}
 
-		postbuildcommand
+		postbuildcommands
 		{
 			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
 		}
@@ -48,7 +48,7 @@ project "Osiris"
 	filter "configurations:Debug"
 		defines "OSIRIS_DEBUG"
 		symbols "On"
-	
+
 	filter "configurations:Release"
 		defines "OSIRIS_RELEASE"
 		optimize "On"
@@ -96,11 +96,11 @@ project "Sandbox"
 	filter "configurations:Debug"
 		defines "OSIRIS_DEBUG"
 		symbols "On"
-	
+
 	filter "configurations:Release"
 		defines "OSIRIS_RELEASE"
 		optimize "On"
 
-	filter "configurations:Dist" 
+	filter "configurations:Dist"
 		defines "OSIRIS_DIST"
 		optimize "On"
