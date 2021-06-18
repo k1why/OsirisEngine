@@ -1,3 +1,8 @@
+#ms projects
+*.sln
+*.vcxproj
+*.vcxproj.filters
+
 #build dirs
 bin/
 bin-int/
