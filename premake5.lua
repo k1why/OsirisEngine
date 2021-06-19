@@ -26,7 +26,7 @@ project "Osiris"
 
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/third-party/spdlog/include"
 	}
 
 	filter "system:windows"
@@ -74,7 +74,7 @@ project "Sandbox"
 
 	includedirs
 	{
-		"Osiris/vendor/spdlog/include",
+		"Osiris/third-party/spdlog/include",
 		"Osiris/src"
 	}
 
