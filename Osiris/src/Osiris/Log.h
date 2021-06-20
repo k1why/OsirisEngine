@@ -2,7 +2,7 @@
 
 #include <memory>
 
-#include "Core.h"
+#include "Osiris/Core.h"
 #include "spdlog/spdlog.h"
 
 namespace osiris

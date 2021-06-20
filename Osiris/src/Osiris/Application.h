@@ -2,7 +2,7 @@
 
 #include <memory>
 
-#include "Core.h"
+#include "Osiris/Core.h"
 
 namespace Osiris
 {
