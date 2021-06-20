@@ -1,8 +1,10 @@
+#include <iostream>
+
 #include <memory>
 
 #include <Osiris.h>
 
-class Sandbox : public Osiris::Application
+class Sandbox : public osiris::Application
 {
 public:
 	Sandbox()
@@ -10,13 +12,14 @@ public:
 
 	}
 
-	~Sandbox()
+	virtual ~Sandbox()
 	{
 
 	}
 };
 
-std::unique_ptr<Osiris::Application> Osiris::CreateApplication()
+std::shared_ptr<osiris::Application> osiris::Application::CreateApplication()
 {
-	return std::make_unique<Sandbox>();
+	return std::make_shared<Sandbox>();
 }
+

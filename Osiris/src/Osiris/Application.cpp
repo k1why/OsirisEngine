@@ -1,7 +1,7 @@
 #include "Application.h"
 
 
-using namespace Osiris;
+using namespace osiris;
 
 Application::Application()
 {

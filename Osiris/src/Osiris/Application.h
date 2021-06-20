@@ -2,20 +2,20 @@
 
 #include <memory>
 
-#include "Core.h"
+#include "Osiris/Core.h"
 
-namespace Osiris
+namespace osiris
 {
 	class OSIRIS_API Application
 	{
 	public:
+		static std::shared_ptr<Application> CreateApplication();
+
 		Application();
 		virtual ~Application();
 
 		void Run();
 	};
-
-	std::unique_ptr<Application> CreateApplication();
 }
 
 

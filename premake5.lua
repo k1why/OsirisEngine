@@ -26,7 +26,8 @@ project "Osiris"
 
 	includedirs
 	{
-		"%{prj.name}/third-party/spdlog/include"
+		"%{prj.name}/third-party/spdlog/include",
+		"%{prj.name}/src"
 	}
 
 	filter "system:windows"

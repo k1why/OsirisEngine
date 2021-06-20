@@ -1,2 +1,2 @@
-call vendor\tools\premake\premake5.exe %1
+call Tools\premake\premake5.exe %1
 PAUSE
